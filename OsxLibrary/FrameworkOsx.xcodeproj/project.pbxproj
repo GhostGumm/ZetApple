@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		125D925C1B5D42E80094E381 /* FrameworkOsx.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D925B1B5D42E80094E381 /* FrameworkOsx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		125D92621B5D42E80094E381 /* FrameworkOsx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92561B5D42E80094E381 /* FrameworkOsx.framework */; };
+		125D92691B5D42E80094E381 /* FrameworkOsxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D92681B5D42E80094E381 /* FrameworkOsxTests.m */; };
+		125D92871B5D432C0094E381 /* 2046.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92731B5D432C0094E381 /* 2046.h */; };
+		125D92881B5D432C0094E381 /* comet_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92741B5D432C0094E381 /* comet_buffer.h */; };
+		125D92891B5D432C0094E381 /* comet_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92751B5D432C0094E381 /* comet_memory.h */; };
+		125D928A1B5D432C0094E381 /* comet_message.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92761B5D432C0094E381 /* comet_message.h */; };
+		125D928B1B5D432C0094E381 /* cometd_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92771B5D432C0094E381 /* cometd_internal.h */; };
+		125D928C1B5D432C0094E381 /* cometd.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92781B5D432C0094E381 /* cometd.h */; };
+		125D928D1B5D432C0094E381 /* CommandParsingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92791B5D432C0094E381 /* CommandParsingInfo.h */; };
+		125D928E1B5D432C0094E381 /* getGdaInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D927A1B5D432C0094E381 /* getGdaInfo.h */; };
+		125D928F1B5D432C0094E381 /* groupUsersInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D927B1B5D432C0094E381 /* groupUsersInfo.h */; };
+		125D92901B5D432C0094E381 /* handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D927C1B5D432C0094E381 /* handler.h */; };
+		125D92911B5D432C0094E381 /* HashMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D927D1B5D432C0094E381 /* HashMaps.h */; };
+		125D92921B5D432C0094E381 /* libZeta.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D927E1B5D432C0094E381 /* libZeta.h */; };
+		125D92931B5D432C0094E381 /* listingEntryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D927F1B5D432C0094E381 /* listingEntryInfo.h */; };
+		125D92941B5D432C0094E381 /* listingGdaInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92801B5D432C0094E381 /* listingGdaInfo.h */; };
+		125D92951B5D432C0094E381 /* messageEntryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92811B5D432C0094E381 /* messageEntryInfo.h */; };
+		125D92961B5D432C0094E381 /* putGdaInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92821B5D432C0094E381 /* putGdaInfo.h */; };
+		125D92971B5D432C0094E381 /* queueInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92831B5D432C0094E381 /* queueInfo.h */; };
+		125D92981B5D432C0094E381 /* stackListenerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92841B5D432C0094E381 /* stackListenerInfo.h */; };
+		125D92991B5D432C0094E381 /* stackListingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92851B5D432C0094E381 /* stackListingInfo.h */; };
+		125D929A1B5D432C0094E381 /* zetaclient.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92861B5D432C0094E381 /* zetaclient.h */; };
+		125D929C1B5D43460094E381 /* LibZetaC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D929B1B5D43460094E381 /* LibZetaC.a */; };
+		125D92A01B5D43840094E381 /* ZetaInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D929E1B5D43840094E381 /* ZetaInit.h */; };
+		125D92A11B5D43840094E381 /* ZetaInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D929F1B5D43840094E381 /* ZetaInit.m */; };
+		125D92A31B5D439D0094E381 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92A21B5D439D0094E381 /* libcurl.dylib */; };
+		125D92CE1B5D47AE0094E381 /* libjansson.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */; };
+		125D92D11B5D47F10094E381 /* jansson_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92CF1B5D47F10094E381 /* jansson_config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		125D92D21B5D47F10094E381 /* jansson.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92D01B5D47F10094E381 /* jansson.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		12B76C711B5E4D99000474F2 /* ZetaRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B76C6F1B5E4D99000474F2 /* ZetaRequest.h */; };
+		12B76C721B5E4D99000474F2 /* ZetaRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B76C701B5E4D99000474F2 /* ZetaRequest.m */; };
+		12B76C8E1B5E707E000474F2 /* FrameworkOsx.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B76C8C1B5E707E000474F2 /* FrameworkOsx.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		125D92631B5D42E80094E381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 125D924D1B5D42E80094E381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125D92551B5D42E80094E381;
+			remoteInfo = FrameworkOsx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		125D92561B5D42E80094E381 /* FrameworkOsx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkOsx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		125D925A1B5D42E80094E381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125D925B1B5D42E80094E381 /* FrameworkOsx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkOsx.h; sourceTree = "<group>"; };
+		125D92611B5D42E80094E381 /* FrameworkOsxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkOsxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		125D92671B5D42E80094E381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125D92681B5D42E80094E381 /* FrameworkOsxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkOsxTests.m; sourceTree = "<group>"; };
+		125D92731B5D432C0094E381 /* 2046.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 2046.h; sourceTree = "<group>"; };
+		125D92741B5D432C0094E381 /* comet_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comet_buffer.h; sourceTree = "<group>"; };
+		125D92751B5D432C0094E381 /* comet_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comet_memory.h; sourceTree = "<group>"; };
+		125D92761B5D432C0094E381 /* comet_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comet_message.h; sourceTree = "<group>"; };
+		125D92771B5D432C0094E381 /* cometd_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cometd_internal.h; sourceTree = "<group>"; };
+		125D92781B5D432C0094E381 /* cometd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cometd.h; sourceTree = "<group>"; };
+		125D92791B5D432C0094E381 /* CommandParsingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandParsingInfo.h; sourceTree = "<group>"; };
+		125D927A1B5D432C0094E381 /* getGdaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getGdaInfo.h; sourceTree = "<group>"; };
+		125D927B1B5D432C0094E381 /* groupUsersInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupUsersInfo.h; sourceTree = "<group>"; };
+		125D927C1B5D432C0094E381 /* handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handler.h; sourceTree = "<group>"; };
+		125D927D1B5D432C0094E381 /* HashMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashMaps.h; sourceTree = "<group>"; };
+		125D927E1B5D432C0094E381 /* libZeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libZeta.h; sourceTree = "<group>"; };
+		125D927F1B5D432C0094E381 /* listingEntryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listingEntryInfo.h; sourceTree = "<group>"; };
+		125D92801B5D432C0094E381 /* listingGdaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listingGdaInfo.h; sourceTree = "<group>"; };
+		125D92811B5D432C0094E381 /* messageEntryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageEntryInfo.h; sourceTree = "<group>"; };
+		125D92821B5D432C0094E381 /* putGdaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = putGdaInfo.h; sourceTree = "<group>"; };
+		125D92831B5D432C0094E381 /* queueInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queueInfo.h; sourceTree = "<group>"; };
+		125D92841B5D432C0094E381 /* stackListenerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stackListenerInfo.h; sourceTree = "<group>"; };
+		125D92851B5D432C0094E381 /* stackListingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stackListingInfo.h; sourceTree = "<group>"; };
+		125D92861B5D432C0094E381 /* zetaclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zetaclient.h; sourceTree = "<group>"; };
+		125D929B1B5D43460094E381 /* LibZetaC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = LibZetaC.a; sourceTree = "<group>"; };
+		125D929E1B5D43840094E381 /* ZetaInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZetaInit.h; sourceTree = "<group>"; };
+		125D929F1B5D43840094E381 /* ZetaInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZetaInit.m; sourceTree = "<group>"; };
+		125D92A21B5D439D0094E381 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjansson.4.dylib; path = ../../../../usr/local/Cellar/jansson/2.7/lib/libjansson.4.dylib; sourceTree = "<group>"; };
+		125D92CF1B5D47F10094E381 /* jansson_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jansson_config.h; sourceTree = "<group>"; };
+		125D92D01B5D47F10094E381 /* jansson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jansson.h; sourceTree = "<group>"; };
+		12B76C6F1B5E4D99000474F2 /* ZetaRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZetaRequest.h; sourceTree = "<group>"; };
+		12B76C701B5E4D99000474F2 /* ZetaRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZetaRequest.m; sourceTree = "<group>"; };
+		12B76C8C1B5E707E000474F2 /* FrameworkOsx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameworkOsx.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		125D92521B5D42E80094E381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125D92A31B5D439D0094E381 /* libcurl.dylib in Frameworks */,
+				125D929C1B5D43460094E381 /* LibZetaC.a in Frameworks */,
+				125D92CE1B5D47AE0094E381 /* libjansson.4.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125D925E1B5D42E80094E381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125D92621B5D42E80094E381 /* FrameworkOsx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		125D924C1B5D42E80094E381 = {
+			isa = PBXGroup;
+			children = (
+				125D92CF1B5D47F10094E381 /* jansson_config.h */,
+				125D92D01B5D47F10094E381 /* jansson.h */,
+				125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */,
+				125D92A21B5D439D0094E381 /* libcurl.dylib */,
+				125D92721B5D431D0094E381 /* ZetaLib */,
+				125D92581B5D42E80094E381 /* FrameworkOsx */,
+				125D92651B5D42E80094E381 /* FrameworkOsxTests */,
+				125D92571B5D42E80094E381 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		125D92571B5D42E80094E381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				125D92561B5D42E80094E381 /* FrameworkOsx.framework */,
+				125D92611B5D42E80094E381 /* FrameworkOsxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		125D92581B5D42E80094E381 /* FrameworkOsx */ = {
+			isa = PBXGroup;
+			children = (
+				125D929D1B5D43630094E381 /* ZetaWrap */,
+				125D925B1B5D42E80094E381 /* FrameworkOsx.h */,
+				12B76C8C1B5E707E000474F2 /* FrameworkOsx.m */,
+				125D92591B5D42E80094E381 /* Supporting Files */,
+			);
+			path = FrameworkOsx;
+			sourceTree = "<group>";
+		};
+		125D92591B5D42E80094E381 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				125D925A1B5D42E80094E381 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		125D92651B5D42E80094E381 /* FrameworkOsxTests */ = {
+			isa = PBXGroup;
+			children = (
+				125D92681B5D42E80094E381 /* FrameworkOsxTests.m */,
+				125D92661B5D42E80094E381 /* Supporting Files */,
+			);
+			path = FrameworkOsxTests;
+			sourceTree = "<group>";
+		};
+		125D92661B5D42E80094E381 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				125D92671B5D42E80094E381 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		125D92721B5D431D0094E381 /* ZetaLib */ = {
+			isa = PBXGroup;
+			children = (
+				125D929B1B5D43460094E381 /* LibZetaC.a */,
+				125D92731B5D432C0094E381 /* 2046.h */,
+				125D92741B5D432C0094E381 /* comet_buffer.h */,
+				125D92751B5D432C0094E381 /* comet_memory.h */,
+				125D92761B5D432C0094E381 /* comet_message.h */,
+				125D92771B5D432C0094E381 /* cometd_internal.h */,
+				125D92781B5D432C0094E381 /* cometd.h */,
+				125D92791B5D432C0094E381 /* CommandParsingInfo.h */,
+				125D927A1B5D432C0094E381 /* getGdaInfo.h */,
+				125D927B1B5D432C0094E381 /* groupUsersInfo.h */,
+				125D927C1B5D432C0094E381 /* handler.h */,
+				125D927D1B5D432C0094E381 /* HashMaps.h */,
+				125D927E1B5D432C0094E381 /* libZeta.h */,
+				125D927F1B5D432C0094E381 /* listingEntryInfo.h */,
+				125D92801B5D432C0094E381 /* listingGdaInfo.h */,
+				125D92811B5D432C0094E381 /* messageEntryInfo.h */,
+				125D92821B5D432C0094E381 /* putGdaInfo.h */,
+				125D92831B5D432C0094E381 /* queueInfo.h */,
+				125D92841B5D432C0094E381 /* stackListenerInfo.h */,
+				125D92851B5D432C0094E381 /* stackListingInfo.h */,
+				125D92861B5D432C0094E381 /* zetaclient.h */,
+			);
+			name = ZetaLib;
+			sourceTree = "<group>";
+		};
+		125D929D1B5D43630094E381 /* ZetaWrap */ = {
+			isa = PBXGroup;
+			children = (
+				125D92D31B5D48610094E381 /* Init */,
+				12B76C6E1B5E4D68000474F2 /* Request */,
+			);
+			name = ZetaWrap;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		125D92D31B5D48610094E381 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				125D929E1B5D43840094E381 /* ZetaInit.h */,
+				125D929F1B5D43840094E381 /* ZetaInit.m */,
+			);
+			name = Init;
+			sourceTree = "<group>";
+		};
+		12B76C6E1B5E4D68000474F2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				12B76C6F1B5E4D99000474F2 /* ZetaRequest.h */,
+				12B76C701B5E4D99000474F2 /* ZetaRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		125D92531B5D42E80094E381 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125D928C1B5D432C0094E381 /* cometd.h in Headers */,
+				125D92D11B5D47F10094E381 /* jansson_config.h in Headers */,
+				125D92D21B5D47F10094E381 /* jansson.h in Headers */,
+				125D92911B5D432C0094E381 /* HashMaps.h in Headers */,
+				125D928D1B5D432C0094E381 /* CommandParsingInfo.h in Headers */,
+				125D928A1B5D432C0094E381 /* comet_message.h in Headers */,
+				12B76C711B5E4D99000474F2 /* ZetaRequest.h in Headers */,
+				125D92961B5D432C0094E381 /* putGdaInfo.h in Headers */,
+				125D92931B5D432C0094E381 /* listingEntryInfo.h in Headers */,
+				125D92891B5D432C0094E381 /* comet_memory.h in Headers */,
+				125D92921B5D432C0094E381 /* libZeta.h in Headers */,
+				125D92971B5D432C0094E381 /* queueInfo.h in Headers */,
+				125D92881B5D432C0094E381 /* comet_buffer.h in Headers */,
+				125D92871B5D432C0094E381 /* 2046.h in Headers */,
+				125D92941B5D432C0094E381 /* listingGdaInfo.h in Headers */,
+				125D92991B5D432C0094E381 /* stackListingInfo.h in Headers */,
+				125D92901B5D432C0094E381 /* handler.h in Headers */,
+				125D92A01B5D43840094E381 /* ZetaInit.h in Headers */,
+				125D92981B5D432C0094E381 /* stackListenerInfo.h in Headers */,
+				125D929A1B5D432C0094E381 /* zetaclient.h in Headers */,
+				125D92951B5D432C0094E381 /* messageEntryInfo.h in Headers */,
+				125D925C1B5D42E80094E381 /* FrameworkOsx.h in Headers */,
+				125D928F1B5D432C0094E381 /* groupUsersInfo.h in Headers */,
+				125D928E1B5D432C0094E381 /* getGdaInfo.h in Headers */,
+				125D928B1B5D432C0094E381 /* cometd_internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		125D92551B5D42E80094E381 /* FrameworkOsx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125D926C1B5D42E80094E381 /* Build configuration list for PBXNativeTarget "FrameworkOsx" */;
+			buildPhases = (
+				125D92511B5D42E80094E381 /* Sources */,
+				125D92521B5D42E80094E381 /* Frameworks */,
+				125D92531B5D42E80094E381 /* Headers */,
+				125D92541B5D42E80094E381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrameworkOsx;
+			productName = FrameworkOsx;
+			productReference = 125D92561B5D42E80094E381 /* FrameworkOsx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		125D92601B5D42E80094E381 /* FrameworkOsxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125D926F1B5D42E80094E381 /* Build configuration list for PBXNativeTarget "FrameworkOsxTests" */;
+			buildPhases = (
+				125D925D1B5D42E80094E381 /* Sources */,
+				125D925E1B5D42E80094E381 /* Frameworks */,
+				125D925F1B5D42E80094E381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125D92641B5D42E80094E381 /* PBXTargetDependency */,
+			);
+			name = FrameworkOsxTests;
+			productName = FrameworkOsxTests;
+			productReference = 125D92611B5D42E80094E381 /* FrameworkOsxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		125D924D1B5D42E80094E381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Hakim;
+				TargetAttributes = {
+					125D92551B5D42E80094E381 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					125D92601B5D42E80094E381 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 125D92501B5D42E80094E381 /* Build configuration list for PBXProject "FrameworkOsx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 125D924C1B5D42E80094E381;
+			productRefGroup = 125D92571B5D42E80094E381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				125D92551B5D42E80094E381 /* FrameworkOsx */,
+				125D92601B5D42E80094E381 /* FrameworkOsxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		125D92541B5D42E80094E381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125D925F1B5D42E80094E381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		125D92511B5D42E80094E381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B76C8E1B5E707E000474F2 /* FrameworkOsx.m in Sources */,
+				125D92A11B5D43840094E381 /* ZetaInit.m in Sources */,
+				12B76C721B5E4D99000474F2 /* ZetaRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125D925D1B5D42E80094E381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125D92691B5D42E80094E381 /* FrameworkOsxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		125D92641B5D42E80094E381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125D92551B5D42E80094E381 /* FrameworkOsx */;
+			targetProxy = 125D92631B5D42E80094E381 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		125D926A1B5D42E80094E381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		125D926B1B5D42E80094E381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		125D926D1B5D42E80094E381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = FrameworkOsx/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/jansson/2.7/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		125D926E1B5D42E80094E381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = FrameworkOsx/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/jansson/2.7/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		125D92701B5D42E80094E381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FrameworkOsxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		125D92711B5D42E80094E381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FrameworkOsxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		125D92501B5D42E80094E381 /* Build configuration list for PBXProject "FrameworkOsx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125D926A1B5D42E80094E381 /* Debug */,
+				125D926B1B5D42E80094E381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125D926C1B5D42E80094E381 /* Build configuration list for PBXNativeTarget "FrameworkOsx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125D926D1B5D42E80094E381 /* Debug */,
+				125D926E1B5D42E80094E381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125D926F1B5D42E80094E381 /* Build configuration list for PBXNativeTarget "FrameworkOsxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125D92701B5D42E80094E381 /* Debug */,
+				125D92711B5D42E80094E381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 125D924D1B5D42E80094E381 /* Project object */;
+}
