@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CommandLine.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>FrameworkOsx Tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>125D92601B5D42E80094E381</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>126305691B5FEB75009128C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

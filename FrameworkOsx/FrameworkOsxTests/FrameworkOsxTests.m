@@ -33,21 +33,6 @@ typedef bool (*cometd_subscription_callback)(cometd_client_t * client, cometd_me
 }
 
 - (void) ExecuteAll{
-
-    ZetaInit *Test;
-    
-    NSLog(@"testing shit");
-    cometd_subscription_callback totolacallback;
-    [Test ZetaInit];
-    [Test ZetaInitHandshake:"GmY-HuzW" DeploymentId:"KZyH" Login:"test2" Password:"password"];
-    [Test ZetaClient:"http://m.zpush.ovh:8080/str/strd" Transport:NULL BusinessId:"GmY-HuzW" HandShakeManager:Test->hm resource:"zetaTuto"];
-    cometd_channel_subscribe(Test->client->cometClient, totolacallback, "/channel/channel");
-    //[Test ZetaSubscriber:Test->client->cometClient CallBacker:@selector(ExecuteFunc) Channel:"/servi\
-     ce/GmY-HuzW/2v_u/execute"];
-    if (!zeta_handshake(Test->client)){
-        while (![Test ZetaMainLoop:Test->client])
-            cometd_execute_request(Test->client->cometClient, Test->hm, "2v_u" , malloc(sizeof(char*) + 4) , NULL, "ShDmD1_ZFwNnmmjLxJCroA", "resource0","ShDmD1_ZFwNnmmjLxJCroA", "resource1");
-    }
 }
 
 - (void)testExample {

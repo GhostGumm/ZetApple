@@ -19,6 +19,7 @@ But remember what you put in it, as i can't cast for every situation known on ea
 To ease up the use of the map each Object contains the info of each "data" Json_Object. So concretly, you can iterate on Object with the ->next and ->prev pointers.
 For example you have 4 JSon "data" Objects. You will get 4 GDAPut structures, but the HashMaps Object field hides multiple variables within its stucture with key, value,index and type. So you only have to iterate over the *object pointer to get all your info from one Json Object. Be warned ! The value field will allways return a void *, so check the Type field before and cast it to the good type.  
 */
+    
   HashMaps *object;
   GdaPut   *next;
   GdaPut   *prev;

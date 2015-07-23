@@ -4,7 +4,7 @@
 #include "zetaclient.h"
 
 bool     cometd_ping_request(cometd_client_t *client, zeta_handshake_manager_t *hm, char *SDepId, char *action);
-bool     cometd_pong_request(cometd_client_t *client, zeta_handshake_manager_t *hm, char *SDepId, char *action, char* avaible, char *owner, char *ressource, char *uid, char *user);
+bool     cometd_pong_request(cometd_client_t *client, zeta_handshake_manager_t *hm, char *SDepId, char *action, bool avaible, char *owner, char *ressource, char *uid, char *user);
 bool     cometd_execute_request(cometd_client_t *client, zeta_handshake_manager_t *hm, char *SDepId, char *cmd, HashMaps *data, char *from, char *fromRes, char *owner, char *resource);
 bool     cometd_macro_call_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, char *name, HashMaps *param);
 bool     cometd_my_groups_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, const char *owner);
@@ -18,7 +18,7 @@ bool     cometd_group_add_users_request(cometd_client_t *client, zeta_handshake_
 bool     cometd_group_users_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, char *group, char *owner);
 bool     cometd_add_me_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, char *group, char *owner, char * user);
 bool     cometd_all_groups_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, char *owner);
-bool     cometd_group_create_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, char *group, char *groupName);
+bool     cometd_group_create_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, char *group, char *groupName, char *Owner);
 bool     cometd_queue_done_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, HashMaps *result, bool success, char *taskId);
 bool     cometd_queue_submit_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, OwnerRessource *origin, char *desc, char *origBusy, char *origDep, HashMaps *data);
 bool     cometd_queue_submit_request(cometd_client_t *client, zeta_handshake_manager_t *hm, const char *SDepId, OwnerRessource *origin, char *desc, char *origBusy, char *origDep, HashMaps *data);

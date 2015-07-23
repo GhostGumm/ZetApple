@@ -32,7 +32,7 @@ struct _HashMaps{
 
 void		GoBack(HashMaps **head);
 void		GoFront(HashMaps **head);
-int		GetTotalElements(HashMaps *head);
+int		    GetTotalElements(HashMaps *head);
 HashMaps	*AddKeyValue(HashMaps *head);
 HashMaps	*GetValueFromKey(char *key, HashMaps *head);
 bool		IfKeyExist(char *key, HashMaps *head);

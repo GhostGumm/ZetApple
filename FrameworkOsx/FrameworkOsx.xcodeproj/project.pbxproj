@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		125D925C1B5D42E80094E381 /* FrameworkOsx.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D925B1B5D42E80094E381 /* FrameworkOsx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		125D92621B5D42E80094E381 /* FrameworkOsx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92561B5D42E80094E381 /* FrameworkOsx.framework */; };
 		125D92691B5D42E80094E381 /* FrameworkOsxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D92681B5D42E80094E381 /* FrameworkOsxTests.m */; };
 		125D92871B5D432C0094E381 /* 2046.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92731B5D432C0094E381 /* 2046.h */; };
@@ -37,9 +36,11 @@
 		125D92CE1B5D47AE0094E381 /* libjansson.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */; };
 		125D92D11B5D47F10094E381 /* jansson_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92CF1B5D47F10094E381 /* jansson_config.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		125D92D21B5D47F10094E381 /* jansson.h in Headers */ = {isa = PBXBuildFile; fileRef = 125D92D01B5D47F10094E381 /* jansson.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		12B76C711B5E4D99000474F2 /* ZetaRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B76C6F1B5E4D99000474F2 /* ZetaRequest.h */; };
-		12B76C721B5E4D99000474F2 /* ZetaRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B76C701B5E4D99000474F2 /* ZetaRequest.m */; };
-		12B76C8E1B5E707E000474F2 /* FrameworkOsx.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B76C8C1B5E707E000474F2 /* FrameworkOsx.m */; };
+		1263056D1B5FEB75009128C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1263056C1B5FEB75009128C9 /* main.m */; };
+		126305711B5FF438009128C9 /* LibZetaC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D929B1B5D43460094E381 /* LibZetaC.a */; };
+		126305721B5FF43B009128C9 /* libjansson.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */; };
+		126305731B5FF43D009128C9 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 125D92A21B5D439D0094E381 /* libcurl.dylib */; };
+		126305741B5FF488009128C9 /* ZetaInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D929F1B5D43840094E381 /* ZetaInit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +53,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		126305681B5FEB75009128C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		125D92561B5D42E80094E381 /* FrameworkOsx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkOsx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		125D925A1B5D42E80094E381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		125D925B1B5D42E80094E381 /* FrameworkOsx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkOsx.h; sourceTree = "<group>"; };
 		125D92611B5D42E80094E381 /* FrameworkOsxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkOsxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125D92671B5D42E80094E381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125D92681B5D42E80094E381 /* FrameworkOsxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkOsxTests.m; sourceTree = "<group>"; };
@@ -83,12 +95,11 @@
 		125D929E1B5D43840094E381 /* ZetaInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZetaInit.h; sourceTree = "<group>"; };
 		125D929F1B5D43840094E381 /* ZetaInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZetaInit.m; sourceTree = "<group>"; };
 		125D92A21B5D439D0094E381 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
-		125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjansson.4.dylib; path = ../../../../usr/local/Cellar/jansson/2.7/lib/libjansson.4.dylib; sourceTree = "<group>"; };
+		125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjansson.4.dylib; path = /usr/local/Cellar/jansson/2.7/lib/libjansson.4.dylib; sourceTree = "<absolute>"; };
 		125D92CF1B5D47F10094E381 /* jansson_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jansson_config.h; sourceTree = "<group>"; };
 		125D92D01B5D47F10094E381 /* jansson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jansson.h; sourceTree = "<group>"; };
-		12B76C6F1B5E4D99000474F2 /* ZetaRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZetaRequest.h; sourceTree = "<group>"; };
-		12B76C701B5E4D99000474F2 /* ZetaRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZetaRequest.m; sourceTree = "<group>"; };
-		12B76C8C1B5E707E000474F2 /* FrameworkOsx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameworkOsx.m; sourceTree = "<group>"; };
+		1263056A1B5FEB75009128C9 /* CommandLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLine; sourceTree = BUILT_PRODUCTS_DIR; };
+		1263056C1B5FEB75009128C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,19 +121,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		126305671B5FEB75009128C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126305711B5FF438009128C9 /* LibZetaC.a in Frameworks */,
+				126305721B5FF43B009128C9 /* libjansson.4.dylib in Frameworks */,
+				126305731B5FF43D009128C9 /* libcurl.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		125D924C1B5D42E80094E381 = {
 			isa = PBXGroup;
 			children = (
-				125D92CF1B5D47F10094E381 /* jansson_config.h */,
-				125D92D01B5D47F10094E381 /* jansson.h */,
-				125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */,
-				125D92A21B5D439D0094E381 /* libcurl.dylib */,
+				12B76CCD1B5E9827000474F2 /* Jansson&curl */,
 				125D92721B5D431D0094E381 /* ZetaLib */,
 				125D92581B5D42E80094E381 /* FrameworkOsx */,
 				125D92651B5D42E80094E381 /* FrameworkOsxTests */,
+				1263056B1B5FEB75009128C9 /* CommandLine */,
 				125D92571B5D42E80094E381 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +151,7 @@
 			children = (
 				125D92561B5D42E80094E381 /* FrameworkOsx.framework */,
 				125D92611B5D42E80094E381 /* FrameworkOsxTests.xctest */,
+				1263056A1B5FEB75009128C9 /* CommandLine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,8 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				125D929D1B5D43630094E381 /* ZetaWrap */,
-				125D925B1B5D42E80094E381 /* FrameworkOsx.h */,
-				12B76C8C1B5E707E000474F2 /* FrameworkOsx.m */,
 				125D92591B5D42E80094E381 /* Supporting Files */,
 			);
 			path = FrameworkOsx;
@@ -204,7 +222,6 @@
 			isa = PBXGroup;
 			children = (
 				125D92D31B5D48610094E381 /* Init */,
-				12B76C6E1B5E4D68000474F2 /* Request */,
 			);
 			name = ZetaWrap;
 			path = ..;
@@ -219,13 +236,23 @@
 			name = Init;
 			sourceTree = "<group>";
 		};
-		12B76C6E1B5E4D68000474F2 /* Request */ = {
+		1263056B1B5FEB75009128C9 /* CommandLine */ = {
 			isa = PBXGroup;
 			children = (
-				12B76C6F1B5E4D99000474F2 /* ZetaRequest.h */,
-				12B76C701B5E4D99000474F2 /* ZetaRequest.m */,
+				1263056C1B5FEB75009128C9 /* main.m */,
 			);
-			name = Request;
+			path = CommandLine;
+			sourceTree = "<group>";
+		};
+		12B76CCD1B5E9827000474F2 /* Jansson&curl */ = {
+			isa = PBXGroup;
+			children = (
+				125D92CF1B5D47F10094E381 /* jansson_config.h */,
+				125D92D01B5D47F10094E381 /* jansson.h */,
+				125D92CD1B5D47AE0094E381 /* libjansson.4.dylib */,
+				125D92A21B5D439D0094E381 /* libcurl.dylib */,
+			);
+			name = "Jansson&curl";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +268,6 @@
 				125D92911B5D432C0094E381 /* HashMaps.h in Headers */,
 				125D928D1B5D432C0094E381 /* CommandParsingInfo.h in Headers */,
 				125D928A1B5D432C0094E381 /* comet_message.h in Headers */,
-				12B76C711B5E4D99000474F2 /* ZetaRequest.h in Headers */,
 				125D92961B5D432C0094E381 /* putGdaInfo.h in Headers */,
 				125D92931B5D432C0094E381 /* listingEntryInfo.h in Headers */,
 				125D92891B5D432C0094E381 /* comet_memory.h in Headers */,
@@ -256,7 +282,6 @@
 				125D92981B5D432C0094E381 /* stackListenerInfo.h in Headers */,
 				125D929A1B5D432C0094E381 /* zetaclient.h in Headers */,
 				125D92951B5D432C0094E381 /* messageEntryInfo.h in Headers */,
-				125D925C1B5D42E80094E381 /* FrameworkOsx.h in Headers */,
 				125D928F1B5D432C0094E381 /* groupUsersInfo.h in Headers */,
 				125D928E1B5D432C0094E381 /* getGdaInfo.h in Headers */,
 				125D928B1B5D432C0094E381 /* cometd_internal.h in Headers */,
@@ -302,6 +327,23 @@
 			productReference = 125D92611B5D42E80094E381 /* FrameworkOsxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		126305691B5FEB75009128C9 /* CommandLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 126305701B5FEB75009128C9 /* Build configuration list for PBXNativeTarget "CommandLine" */;
+			buildPhases = (
+				126305661B5FEB75009128C9 /* Sources */,
+				126305671B5FEB75009128C9 /* Frameworks */,
+				126305681B5FEB75009128C9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandLine;
+			productName = CommandLine;
+			productReference = 1263056A1B5FEB75009128C9 /* CommandLine */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,6 +357,9 @@
 						CreatedOnToolsVersion = 6.3.1;
 					};
 					125D92601B5D42E80094E381 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					126305691B5FEB75009128C9 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -333,6 +378,7 @@
 			targets = (
 				125D92551B5D42E80094E381 /* FrameworkOsx */,
 				125D92601B5D42E80094E381 /* FrameworkOsxTests */,
+				126305691B5FEB75009128C9 /* CommandLine */,
 			);
 		};
 /* End PBXProject section */
@@ -359,9 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B76C8E1B5E707E000474F2 /* FrameworkOsx.m in Sources */,
 				125D92A11B5D43840094E381 /* ZetaInit.m in Sources */,
-				12B76C721B5E4D99000474F2 /* ZetaRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +414,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				125D92691B5D42E80094E381 /* FrameworkOsxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		126305661B5FEB75009128C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1263056D1B5FEB75009128C9 /* main.m in Sources */,
+				126305741B5FF488009128C9 /* ZetaInit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +610,34 @@
 			};
 			name = Release;
 		};
+		1263056E1B5FEB75009128C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/jansson/2.7/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1263056F1B5FEB75009128C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/jansson/2.7/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +667,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		126305701B5FEB75009128C9 /* Build configuration list for PBXNativeTarget "CommandLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1263056E1B5FEB75009128C9 /* Debug */,
+				1263056F1B5FEB75009128C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
